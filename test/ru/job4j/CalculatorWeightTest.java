@@ -4,9 +4,7 @@ import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 import org.junit.Test;
-
 import static org.junit.Assert.*;
-
 public class CalculatorWeightTest {
 
     @Test
