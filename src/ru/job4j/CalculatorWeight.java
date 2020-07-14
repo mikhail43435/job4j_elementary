@@ -16,6 +16,5 @@ public class CalculatorWeight {
 
         System.out.println("Man 187 cm height ideal weight is " + man);
         System.out.println("Woman 187 cm height ideal weight is " + woman);
-
     }
 }
