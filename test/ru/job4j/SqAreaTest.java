@@ -1,6 +1,8 @@
 package ru.job4j;
 
 import org.junit.Test;
+import ru.job4j.condition.SqArea;
+
 import static org.junit.Assert.*;
 
 public class SqAreaTest {
