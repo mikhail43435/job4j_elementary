@@ -4,13 +4,9 @@ public class SqArea {
 
 
     public static double square(int p, int k) {
-
         int h = p / (2 * (k + 1));
         int L = h * k;
-        int s = L * h;
-
-        double rsl = s;
-        return rsl;
+         return L * h;
     }
 
     public static void main(String[] args) {
