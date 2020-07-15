@@ -15,7 +15,7 @@ public class Game {
 
     public static void main(String[] args) {
         Game.menu("tanks");
-        Game.menu("tetris");
+        Game.menu("tetris!");
         Game.menu("super mario");
     }
 }
