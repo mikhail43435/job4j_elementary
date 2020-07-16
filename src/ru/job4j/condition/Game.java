@@ -2,13 +2,19 @@ package ru.job4j.condition;
 
 public class Game {
     public static void menu(String name) {
+
+        if (name == null) {
+            System.out.println("Ошибка! Не передано значение!");
+            return;
+        }
+
         if (name.equals("super mario")) { /* сравниваем переменную name с "super mario" */
             System.out.println("Start - super mario");
         }
         if (name.equals("tanks")) { /* Сравнить переменную name с "tanks" */
             System.out.println("Start - tanks");
         }
-        if (name.equals("tetris")) { /* Сравнить переменную name с "tetris" */
+        if (name.equals("tetris!")) { /* Сравнить переменную name с "tetris" */
             System.out.println("Start - tetris");
         }
     }
@@ -17,5 +23,6 @@ public class Game {
         Game.menu("tanks");
         Game.menu("tetris!");
         Game.menu("super mario");
+        Game.menu(null);
     }
 }
