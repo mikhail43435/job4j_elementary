@@ -11,8 +11,6 @@ public class Board {
                     } else {
                     System.out.print(" ");
                 }
-
-                //System.out.print("X");
             }
             /* добавляем перевод на новую строку. */
             System.out.println();
