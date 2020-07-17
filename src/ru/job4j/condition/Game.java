@@ -3,10 +3,10 @@ package ru.job4j.condition;
 public class Game {
     public static void menu(String name) {
 
-        if (name == null) {
+        /*if (name == null) {
             System.out.println("Ошибка! Не передано значение!");
             return;
-        }
+        }*/
 
         if (name.equals("super mario")) { /* сравниваем переменную name с "super mario" */
             System.out.println("Start - super mario");
