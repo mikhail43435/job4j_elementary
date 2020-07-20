@@ -1,4 +1,4 @@
-package ru.job4j.Arrays;
+package ru.job4j.аrrays;
 
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;

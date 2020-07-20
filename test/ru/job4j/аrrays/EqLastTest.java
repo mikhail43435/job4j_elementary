@@ -1,8 +1,8 @@
-package ru.job4j.Arrays;
+package ru.job4j.аrrays;
 
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static ru.job4j.Arrays.EqLast.check;
+import static ru.job4j.аrrays.EqLast.check;
 
 import org.junit.Test;
 

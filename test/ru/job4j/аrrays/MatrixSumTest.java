@@ -1,4 +1,4 @@
-package ru.job4j.Arrays;
+package ru.job4j.аrrays;
 
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;

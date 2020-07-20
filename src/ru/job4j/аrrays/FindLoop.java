@@ -1,6 +1,4 @@
-package ru.job4j.Arrays;
-
-import java.util.concurrent.LinkedBlockingDeque;
+package ru.job4j.аrrays;
 
 public class FindLoop {
     public static int indexOf(int[] data, int el) {

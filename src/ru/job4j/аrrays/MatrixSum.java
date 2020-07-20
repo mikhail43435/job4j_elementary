@@ -1,4 +1,4 @@
-package ru.job4j.Arrays;
+package ru.job4j.аrrays;
 
 public class MatrixSum {
     public static int sum(int[][] array) {

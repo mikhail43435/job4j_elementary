@@ -1,4 +1,4 @@
-package ru.job4j.Arrays;
+package ru.job4j.аrrays;
 
 public class SortSelected {
     public static int[] sort(int[] data) {  // сортировка массива по возрастанию

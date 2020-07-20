@@ -1,7 +1,6 @@
-package ru.job4j.Arrays;
+package ru.job4j.аrrays;
 
 import org.junit.Test;
-import ru.job4j.Arrays.FindLoop;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
