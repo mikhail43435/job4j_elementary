@@ -11,5 +11,6 @@ public class SkipNegative {
 
         }
         return array;
+        //return array;
     }
 }
