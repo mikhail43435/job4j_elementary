@@ -36,7 +36,7 @@ public class MatrixCheck {
 
     public static boolean isWin(char[][] board) {
         boolean result = false;
-        int lengthOfMatrix = 5;
+        int lengthOfMatrix = board.length;
         char neededSymbol = 'X';
         //boolean winIsFoound;
 
