@@ -11,8 +11,8 @@ public class SwitchArray {
 
     public static int[] swapBorder(int[] array) {
         int temp = array[0];
-        array[0] = array[array.length-1];
-        array[array.length-1] = temp;
+        array[0] = array[array.length - 1];
+        array[array.length - 1] = temp;
         return array;
     }
 
@@ -22,5 +22,12 @@ public class SwitchArray {
         for (int index = 0; index < rsl.length; index++) {
             System.out.println(rsl[index]);
         }
+    }
+
+    public static String[] swapStringArray(String[] array, int source, int dest) {
+        String temp = array[dest];
+        array[dest] = array[source];
+        array[source] = temp;
+        return array;
     }
 }
