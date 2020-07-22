@@ -5,7 +5,6 @@ package ru.job4j.аrrays;
 public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
-
         for (int index = 0; index < board[row].length; index++) {
             if (board[row][index] != 'X') {
                 result = false;
@@ -38,8 +37,6 @@ public class MatrixCheck {
         boolean result = false;
         int lengthOfMatrix = board.length;
         char neededSymbol = 'X';
-        //boolean winIsFoound;
-
         for (int index = 0; index < lengthOfMatrix; index++) {
             if (board[index][index] == neededSymbol) { // нашли Х в ячейке
                 // ищем по вертикали и горизонтали
