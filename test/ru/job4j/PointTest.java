@@ -9,12 +9,11 @@ public class PointTest {
 
     @Test
     public void distanceTest() {
-        int x1 = 0;
-        int x2 = 2;
-        int y1 = 0;
-        int y2 = 0;
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double dist = a.distance(b);
         double expected = 2;
-        double  out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         assertEquals(expected, out, 0.01);
     }
 }
