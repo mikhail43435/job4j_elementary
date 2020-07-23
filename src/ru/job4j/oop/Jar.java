@@ -18,6 +18,5 @@ public class Jar {
         System.out.println("first : " + first.value + ". second : " + second.value);
         first.pour(second);
         System.out.println("first : " + first.value + ". second : " + second.value);
-
     }
 }
