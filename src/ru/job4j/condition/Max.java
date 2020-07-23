@@ -7,26 +7,11 @@ public class Max {
     }
 
     public static int max(int first, int second, int third) {
-        int result = first;
-        if (second >= first && second >= third) {
-            result = second;
-        }
-        if (third >= first && third >= second) {
-            result = third;
-        }
-        return result;
+        return max(max(first, second), third);
     }
 
     public static int max(int first, int second, int third, int fourth) {
-        int result = first;
-        if (second >= first && second >= third && second >= fourth) {
-            result = second;
-        } else if (third >= first && third >= second && third >= fourth) {
-            result = third;
-        } else if (fourth >= first) {
-            result = fourth;
-        }
-        return result;
+        return max(max(max(first, second), third), fourth);
     }
 
     public static void main(String[] args){
