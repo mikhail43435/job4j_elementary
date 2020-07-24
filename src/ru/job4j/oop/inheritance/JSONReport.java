@@ -1,11 +1,12 @@
 package ru.job4j.oop.inheritance;
 
 public class JSONReport extends TextReport {
+    @Override
     public String generate(String name, String body) {
-        String result = "{" + System.lineSeparator() +
-                "\"name\" : \"" + name + "\"," + System.lineSeparator() +
-                "\"body\" : \"" + body + "\"" + System.lineSeparator() +
-                "}";
+        String result = "{" + System.lineSeparator()
+                + "\"name\" : \"" + name + "\"," + System.lineSeparator()
+                + "\"body\" : \"" + body + "\"" + System.lineSeparator()
+                + "}";
         return result;
     }
 
