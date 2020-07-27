@@ -5,8 +5,7 @@ public class ShopDrop {
 
         for (int index = startPosition; index < products.length; index++) {
             if (index != products.length - 1) {
-                products[index].setName(products[index + 1].getName());
-                products[index].setCount(products[index + 1].getCount());
+                products[index] = products[index + 1];
             } else {
                 products[index] = null;
             }
