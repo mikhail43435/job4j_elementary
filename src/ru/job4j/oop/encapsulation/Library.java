@@ -4,18 +4,10 @@ import ru.job4j.аrrays.*;
 
 public class Library {
     public static void main(String[] args) {
-        Book book1 =  new Book();
-        Book book2 =  new Book();
-        Book book3 =  new Book();
-        Book book4 =  new Book();
-        book1.setTitle("Clean code");
-        book1.setPages(564);
-        book2.setTitle("Not clean code");
-        book2.setPages(34);
-        book3.setTitle("Very clean code");
-        book3.setPages(64);
-        book4.setTitle("Crazy clean code");
-        book4.setPages(5464);
+        Book book1 =  new Book("Clean code", 454);
+        Book book2 =  new Book("Not clean code", 8798);
+        Book book3 =  new Book("Easy clean code", 32);
+        Book book4 =  new Book("Crazy clean code", 302);
         Book[] books = new Book[4];
         books[0] = book1;
         books[1] = book2;
@@ -38,7 +30,7 @@ public class Library {
     public static void printLibrary(Book[] array) {
         System.out.println("=== Printing library content");
         for (int i = 0; i < array.length; i++) {
-            System.out.println("Book № " + i + "   title: " + array[i].getTitle()
+            System.out.println("Book № " + (i + 1) + "   title: " + array[i].getTitle()
                     + "   pages: " + array[i].getPages()
             );
         }

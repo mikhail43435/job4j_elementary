@@ -1,8 +1,15 @@
 package ru.job4j.oop.encapsulation;
 
+import java.awt.*;
+
 public class Book {
     private String title;
     private int pages;
+
+    public Book(String title, int pages) {
+        this.title = title;
+        this.pages = pages;
+    }
 
     public String getTitle() {
         return title;
