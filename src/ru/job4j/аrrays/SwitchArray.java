@@ -1,5 +1,7 @@
 package ru.job4j.аrrays;
 
+import ru.job4j.oop.encapsulation.Book;
+
 public class SwitchArray {
 
     public static int[] swap(int[] array, int source, int dest) {
@@ -26,6 +28,13 @@ public class SwitchArray {
 
     public static String[] swapStringArray(String[] array, int source, int dest) {
         String temp = array[dest];
+        array[dest] = array[source];
+        array[source] = temp;
+        return array;
+    }
+
+    public static Book[] swap(Book[] array, int source, int dest) {
+        Book temp = array[dest];
         array[dest] = array[source];
         array[source] = temp;
         return array;
