@@ -1,8 +1,8 @@
 package ru.job4j.oop.encapsulation;
 
 public class Book {
-    String title;
-    int pages;
+    private String title;
+    private int pages;
 
     public String getTitle() {
         return title;
