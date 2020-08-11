@@ -1,7 +1,7 @@
 package ru.job4j.oop;
 
 import org.junit.Test;
-import ru.job4j.oop.Point;
+import ru.job4j.oop.base.Point;
 
 import static org.junit.Assert.*;
 

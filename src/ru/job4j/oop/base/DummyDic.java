@@ -1,4 +1,4 @@
-package ru.job4j.oop;
+package ru.job4j.oop.base;
 
 public class DummyDic {
     public String engToRus(String eng) {

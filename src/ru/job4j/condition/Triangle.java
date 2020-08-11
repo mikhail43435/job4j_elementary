@@ -5,7 +5,7 @@ public class Triangle {
         return ((ab + ac) > bc) && ((ac + bc) > ab) && ((ab + bc) > ac);
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         System.out.println(exist(23, 324, 324));
     }
 

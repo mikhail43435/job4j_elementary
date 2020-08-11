@@ -14,7 +14,7 @@ public class Max {
         return max(max(max(first, second), third), fourth);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(max(21, 11));
     }
 }
