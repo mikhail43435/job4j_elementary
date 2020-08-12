@@ -1,4 +1,4 @@
-package ru.job4j.collection.Task;
+package ru.job4j.collection.task;
 
 import org.junit.Test;
 

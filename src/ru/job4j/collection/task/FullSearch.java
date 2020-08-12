@@ -1,4 +1,4 @@
-package ru.job4j.collection.Task;
+package ru.job4j.collection.task;
 
 import java.util.HashSet;
 import java.util.List;
