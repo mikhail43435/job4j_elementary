@@ -1,9 +1,6 @@
 package ru.job4j.collection.bank;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class BankService {
     private Map<User, List<Account>> users = new HashMap<>();
@@ -39,20 +36,27 @@ public class BankService {
         if (user == null) {
             return null;
         }
-        List accounts = users.get(user);
-        int index = accounts.indexOf(new Account(requisite, -1));
+        List<Account> accounts = users.get(user);
+        for (ListIterator<Account> iterator = accounts.listIterator(); iterator.hasNext();) {
+            Account value = iterator.next();
+            if (value.getRequisite().equals(requisite)) {
+                return value;
+            }
+        }
+        /*int index = accounts.indexOf(new Account(requisite, -1));
         if (index != -1) {
             return (Account) accounts.get(index);
         } else {
             return null;
-        }
+        }*/
+        return null;
     }
 
     public boolean transferMoney(String srcPassport, String srcRequisite,
                                  String destPassport, String destRequisite, double amount) {
         Account srcAccount = findByRequisite(srcPassport, srcRequisite);
         Account destAccount = findByRequisite(destPassport, destRequisite);
-        if (destAccount == null || srcAccount.getBalance() < amount) {
+        if (destAccount == null || srcAccount == null || srcAccount.getBalance() < amount) {
             return false;
         }
         destAccount.setBalance(destAccount.getBalance() + amount);
