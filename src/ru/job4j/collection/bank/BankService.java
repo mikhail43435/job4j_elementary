@@ -6,7 +6,7 @@ public class BankService {
     private Map<User, List<Account>> users = new HashMap<>();
 
     public void addUser(User user) {
-        users.putIfAbsent(user, new ArrayList<Account>());
+        users.putIfAbsent(user, new ArrayList<>());
     }
 
     public void addAccount(String passport, Account account) {
@@ -37,12 +37,19 @@ public class BankService {
             return null;
         }
         List<Account> accounts = users.get(user);
-        for (ListIterator<Account> iterator = accounts.listIterator(); iterator.hasNext();) {
-            Account value = iterator.next();
+        for (Account value : accounts) {
             if (value.getRequisite().equals(requisite)) {
                 return value;
             }
         }
+
+        /*for (ListIterator<Account> iterator = accounts.listIterator(); iterator.hasNext();) {
+            Account value = iterator.next();
+            if (value.getRequisite().equals(requisite)) {
+                return value;
+            }
+        }*/
+
         /*int index = accounts.indexOf(new Account(requisite, -1));
         if (index != -1) {
             return (Account) accounts.get(index);
