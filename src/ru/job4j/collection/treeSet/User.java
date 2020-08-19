@@ -1,4 +1,4 @@
-package ru.job4j.collection.TreeSet;
+package ru.job4j.collection.treeSet;
 
 import java.util.Objects;
 
