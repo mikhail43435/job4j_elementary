@@ -39,11 +39,11 @@ public class JobTest {
     @Test
     public void whenAscByPriority() {
         List<Job> jobs = new ArrayList<>();
-        jobs.add(new Job("Job 2", 4));
-        jobs.add(new Job("Job 3", 2));
+        jobs.add(new Job("Job 1", 4));
+        jobs.add(new Job("Job 1", 2));
         jobs.add(new Job("Job 1", 3));
-        jobs.add(new Job("Job 4", 1));
-        Job jobForCheck =  new Job("Job 0", 0);
+        jobs.add(new Job("Job 1", 1));
+        Job jobForCheck =  new Job("Job 1", 0);
         jobs.add(jobForCheck);
         Comparator<Job> comb = new JobAscByPriority();
         Collections.sort(jobs, comb);
@@ -54,11 +54,11 @@ public class JobTest {
     @Test
     public void whenDescByPriority() {
         List<Job> jobs = new ArrayList<>();
-        jobs.add(new Job("Job 2", 4));
-        jobs.add(new Job("Job 3", 2));
+        jobs.add(new Job("Job 1", 4));
+        jobs.add(new Job("Job 1", 2));
         jobs.add(new Job("Job 1", 3));
-        jobs.add(new Job("Job 4", 1));
-        Job jobForCheck =  new Job("Job 0", 5);
+        jobs.add(new Job("Job 1", 1));
+        Job jobForCheck =  new Job("Job 1", 5);
         jobs.add(jobForCheck);
         Comparator<Job> comb = new JobDescByPriority();
         Collections.sort(jobs, comb);
@@ -69,11 +69,11 @@ public class JobTest {
     @Test
     public void whenAscByNameAcsByPriority() {
         List<Job> jobs = new ArrayList<>();
-        jobs.add(new Job("Job 0", 4));
-        jobs.add(new Job("Job 3", 2));
+        jobs.add(new Job("Job 1", 4));
+        jobs.add(new Job("Job 1", 2));
         jobs.add(new Job("Job 1", 3));
-        jobs.add(new Job("Job 4", 1));
-        Job jobForCheck =  new Job("Job 0", 1);
+        jobs.add(new Job("Job 0", 1));
+        Job jobForCheck =  new Job("Job 0", 0);
         jobs.add(jobForCheck);
         Comparator<Job> comb = new JobAscByName()
         .thenComparing(new JobAscByPriority());
@@ -85,11 +85,11 @@ public class JobTest {
     @Test
     public void whenAscByNameDescByPriority() {
         List<Job> jobs = new ArrayList<>();
-        jobs.add(new Job("Job 0", 4));
+        jobs.add(new Job("Job 2", 4));
         jobs.add(new Job("Job 3", 2));
         jobs.add(new Job("Job 1", 3));
-        jobs.add(new Job("Job 4", 1));
-        Job jobForCheck =  new Job("Job 0", 5);
+        jobs.add(new Job("Job 0", 0));
+        Job jobForCheck =  new Job("Job 0", 1);
         jobs.add(jobForCheck);
         Comparator<Job> comb = new JobAscByName()
                 .thenComparing(new JobDescByPriority());
@@ -101,11 +101,11 @@ public class JobTest {
     @Test
     public void whenDescByNameDescByPriorityDescByLength() {
         List<Job> jobs = new ArrayList<>();
-        jobs.add(new Job("Job 50", 3));
-        jobs.add(new Job("Job 3", 2));
+        jobs.add(new Job("Job 50", 4));
+        jobs.add(new Job("Job 500", 3));
         jobs.add(new Job("Job 1", 3));
-        jobs.add(new Job("Job 4", 1));
-        Job jobForCheck =  new Job("Job 50", 4);
+        jobs.add(new Job("Job 3", 1));
+        Job jobForCheck =  new Job("Job 500", 4);
         jobs.add(jobForCheck);
         Comparator<Job> comb = new JobDescByName()
                 .thenComparing(new JobDescByPriority())
