@@ -29,17 +29,6 @@ public class StringCompareTest {
     }
 
     @Test
-    public void whenLeftLessThanRightResultShouldBeNegative1 () {
-        StringCompare compare = new StringCompare();
-        int rst = compare.compare(
-                "Ivanova",
-                "Ivanov"
-        );
-        assertThat(rst, greaterThan(0));
-    }
-
-
-    @Test
     public void whenLeftGreaterThanRightResultShouldBePositive () {
         StringCompare compare = new StringCompare();
         int rst = compare.compare(
