@@ -31,9 +31,9 @@ public class LexSort implements Comparator<String> {
                 if (Integer.parseInt(splitLeft[index]) < Integer.parseInt(splitRight[index])) {
                     return -1;
                 }
-                if (Integer.parseInt(splitLeft[index]) == Integer.parseInt(splitRight[index])) {
+/*                if (Integer.parseInt(splitLeft[index]) == Integer.parseInt(splitRight[index])) {
                     return 0;
-                }
+                }*/
             }
         }
         return 0;
