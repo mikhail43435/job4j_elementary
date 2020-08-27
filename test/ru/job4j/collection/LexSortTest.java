@@ -38,35 +38,4 @@ public class LexSortTest {
         assertThat(input, is(out));
     }
 
-/*    @Test
-    public void sortNum1x1x20and1x10x5and1x10x4() {
-        String[] input = {
-                "1.1.20. Task.",
-                "1.10.5. Task.",
-                "1.10.4. Task."
-        };
-        String[] out = {
-                "1.1.20. Task.",
-                "1.10.4. Task.",
-                "1.10.5. Task."
-        };
-        Arrays.sort(input, new LexSort());
-        assertThat(input, is(out));
-    }*/
-
-    @Test
-    public void sortNum1andNulland3() {
-        String[] input = {
-                "3. Task.",
-                "",
-                "2. Task."
-        };
-        String[] out = {
-                "",
-                "2. Task.",
-                "3. Task."
-        };
-        Arrays.sort(input, new LexSort());
-        assertThat(input, is(out));
-    }
 }
