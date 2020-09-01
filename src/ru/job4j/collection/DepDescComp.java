@@ -7,7 +7,14 @@ public class DepDescComp implements Comparator<String> {
     public int compare(String o1, String o2) {
         String[] split1 = o1.split("/");
         String[] split2 = o2.split("/");
-        for (int index = 0; index < Integer.min(split1.length, split2.length); index++) {
+
+        int rsl = split1[0].compareTo(split2[0]);
+         if (rsl != 0) {
+             return  rsl;
+         } else {
+             return o1.compareTo(o1);
+         }
+/*        for (int index = 0; index < Integer.min(split1.length, split2.length); index++) {
             int result = split1[index].compareTo(split2[index]);
             if (result == 0) {
                 continue;
@@ -20,6 +27,7 @@ public class DepDescComp implements Comparator<String> {
             return +1;
         } else {
             return 0;
-        }
+        }*/
+        //return 0;
     }
 }
