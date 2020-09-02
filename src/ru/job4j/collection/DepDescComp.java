@@ -12,7 +12,7 @@ public class DepDescComp implements Comparator<String> {
          if (rsl != 0) {
              return  rsl;
          } else {
-             return o1.compareTo(o1);
+             return o1.compareTo(o2);
          }
 /*        for (int index = 0; index < Integer.min(split1.length, split2.length); index++) {
             int result = split1[index].compareTo(split2[index]);
