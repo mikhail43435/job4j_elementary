@@ -14,7 +14,7 @@ public class Departments {
             String start = "";
             for (String el : value.split("/")) {
                 tmp.add(start + el);
-                start = start + el + "/" ;
+                start = start + el + "/";
             }
         }
         List<String> rls = new ArrayList<>(tmp);
@@ -23,15 +23,11 @@ public class Departments {
         return rls;
     }
 
-/*    @Override
-    public int compareTo(Departments d) {
-        return 0;
-    }*/
-
-
     public static void sortAsc(List<String> orgs) {
+        Collections.sort(orgs);
     }
 
     public static void sortDesc(List<String> orgs) {
+        Collections.sort(orgs, Collections.reverseOrder());
     }
 }
