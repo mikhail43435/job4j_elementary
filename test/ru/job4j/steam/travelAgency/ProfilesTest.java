@@ -25,9 +25,25 @@ public class ProfilesTest {
         List<Profile> profileList = new ArrayList<>();
         profileList.add(new Profile(address1));
         profileList.add(new Profile(address2));
-        List<Address> addresses = Arrays.asList( address1, address2);
+        List<Address> addressesFinal = Arrays.asList(address2, address1);
         Profiles profiles = new Profiles();
-        assertThat (addresses, is(profiles.collect(profileList)));
+        assertThat(addressesFinal, is(profiles.collect(profileList)));
+    }
+
+    @Test
+    public void whenSortAndDistinct() {
+        Address address1 = new Address("Moscow", "Bannaya", 23, 3);
+        Address address2 = new Address("Bryansk", "Lenina", 34, 75);
+        Address address3 = new Address("Bryansk", "Lenina", 34, 75);
+
+        List<Profile> profileList = new ArrayList<>();
+        profileList.add(new Profile(address1));
+        profileList.add(new Profile(address2));
+        profileList.add(new Profile(address3));
+
+        List<Address> addressesFinal = Arrays.asList(address2, address1);
+        Profiles profiles = new Profiles();
+        assertThat(addressesFinal, is(profiles.collect(profileList)));
     }
 
 }
