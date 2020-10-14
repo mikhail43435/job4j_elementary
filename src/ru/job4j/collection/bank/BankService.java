@@ -23,40 +23,32 @@ public class BankService {
     }
 
     public User findByPassport(String passport) {
+        /*
         for (Map.Entry<User, List<Account>> entry: users.entrySet()) {
             if (entry.getKey().getPassport().equals(passport)) {
                 return entry.getKey();
             }
-        }
-        return null;
+        }*/
+        Optional<Map.Entry<User, List<Account>>> user = users.entrySet()
+                .stream()
+                .filter(e -> e.getKey().getPassport().equals(passport))
+                .findFirst();
+        return user.map(Map.Entry::getKey).orElse(null);
     }
 
     public Account findByRequisite(String passport, String requisite) {
         User user = findByPassport(passport);
-        if (user == null) {
-            return null;
-        }
+        if (user == null) return null;
         List<Account> accounts = users.get(user);
-        for (Account value : accounts) {
-            if (value.getRequisite().equals(requisite)) {
-                return value;
-            }
-        }
-
-        /*for (ListIterator<Account> iterator = accounts.listIterator(); iterator.hasNext();) {
-            Account value = iterator.next();
+        /*for (Account value : accounts) {
             if (value.getRequisite().equals(requisite)) {
                 return value;
             }
         }*/
-
-        /*int index = accounts.indexOf(new Account(requisite, -1));
-        if (index != -1) {
-            return (Account) accounts.get(index);
-        } else {
-            return null;
-        }*/
-        return null;
+        Optional<Account> account = accounts.stream()
+                .filter(e -> e.getRequisite().equals(requisite))
+                .findFirst();
+        return account.orElse(null);
     }
 
     public boolean transferMoney(String srcPassport, String srcRequisite,
