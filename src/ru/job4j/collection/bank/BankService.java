@@ -29,11 +29,11 @@ public class BankService {
                 return entry.getKey();
             }
         }*/
-        Optional<Map.Entry<User, List<Account>>> user = users.entrySet()
+        Optional<User> user = users.keySet()
                 .stream()
-                .filter(e -> e.getKey().getPassport().equals(passport))
+                .filter(e -> e.getPassport().equals(passport))
                 .findFirst();
-        return user.map(Map.Entry::getKey).orElse(null);
+        return user.orElse(null);
     }
 
     public Account findByRequisite(String passport, String requisite) {
