@@ -1,4 +1,4 @@
-package ru.job4j.streamImp.crosszero;
+package ru.job4j.streamimp.crosszero;
 
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.List;
 
 public class AnalyzeTest {
-/*
+
     @Test
     public void whenSinglePupil() {
         double average = Analyze.averageScore(
@@ -29,7 +29,7 @@ public class AnalyzeTest {
     }
 
     @Test
-    public void whenListOfPupilAverage() {
+    public void whenListOfPupilAverageByPupil() {
         List<Tuple> average = Analyze.averageScoreBySubject(
                 List.of(
                         new Pupil("Ivanov", List.of(new Subject("Math", 100), new Subject("Lang", 100))),
@@ -44,16 +44,16 @@ public class AnalyzeTest {
 
     @Test
     public void whenListOfSubjectAverage() {
-*//*        List<Tuple> average = Analyze.averageScoreByPupil(
+        List<Tuple> average = Analyze.averageScoreByPupil(
                 List.of(
                         new Pupil("Ivanov", List.of(new Subject("Math", 100), new Subject("Lang", 100))),
-                        new Pupil("Petrov", List.of(new Subject("Math", 60), new Subject("Lang", 60)))
+                        new Pupil("Petrov", List.of(new Subject("Math", 50), new Subject("Lang", 60)))
                 ).stream()
         );
         assertThat(average, is(List.of(
-                new Tuple("Math", 80D),
-                new Tuple("Lang", 80D)
-        )));*//*
+                new Tuple("Lang", 80D),
+                new Tuple("Math", 75D)
+        )));
     }
 
     @Test
@@ -67,7 +67,7 @@ public class AnalyzeTest {
         assertThat(best, is(new Tuple("Ivanov", 200D)));
     }
 
-*//*    @Test
+    @Test
     public void whenBestSubject() {
         Tuple best = Analyze.bestSubject(
                 List.of(
@@ -76,5 +76,5 @@ public class AnalyzeTest {
                 ).stream()
         );
         assertThat(best, is(new Tuple("Math", 160D)));
-    }*/
+    }
 }

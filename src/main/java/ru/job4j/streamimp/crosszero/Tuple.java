@@ -1,4 +1,4 @@
-package ru.job4j.streamImp.crosszero;
+package ru.job4j.streamimp.crosszero;
 
 import java.util.Objects;
 
@@ -13,6 +13,14 @@ public class Tuple {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Tuple{" +
+                "name='" + name + '\'' +
+                ", score=" + score +
+                '}';
     }
 
     public double getScore() {

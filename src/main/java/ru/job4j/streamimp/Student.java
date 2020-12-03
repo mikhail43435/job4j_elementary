@@ -1,4 +1,4 @@
-package ru.job4j.streamImp;
+package ru.job4j.streamimp;
 
 import java.util.Objects;
 
