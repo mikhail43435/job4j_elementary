@@ -1,4 +1,4 @@
-package test.java.main.steam.cards;
+package ru.job4j.steam.cards;
 
 import java.util.ArrayList;
 import java.util.List;

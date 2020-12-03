@@ -1,4 +1,4 @@
-package test.java.main.streamImp.crosszero;
+package ru.job4j.streamImp.crosszero;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public class Analyze {
 
-    public static double averageScore(Stream<Pupil> stream) {
+   /* public static double averageScore(Stream<Pupil> stream) {
         return stream
                 .flatMap(e -> e.getSubjects().stream())
                 .mapToInt(e -> e.getScore())
@@ -54,5 +54,5 @@ public class Analyze {
 
     public static Tuple bestSubject(Stream<Pupil> stream) {
         return null;
-    }
+    }*/
 }

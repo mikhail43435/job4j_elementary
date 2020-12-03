@@ -1,4 +1,4 @@
-package test.java.main.аrrays;
+package ru.job4j.аrrays;
 
 public class Sequence {
     public static void main(String[] args) {

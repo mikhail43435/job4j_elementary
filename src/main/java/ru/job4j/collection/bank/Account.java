@@ -1,4 +1,4 @@
-package test.java.main.collection.bank;
+package ru.job4j.collection.bank;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package test.java.main.oop.polymorphism.updowncasting;
+package ru.job4j.oop.polymorphism.updowncasting;
 
 public class College {
     public static void main(String[] args) {

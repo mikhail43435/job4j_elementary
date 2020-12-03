@@ -1,4 +1,4 @@
-package test.java.main.oop.profession;
+package ru.job4j.oop.profession;
 
 public class Builder extends Engineer {
     private void layBricks(int amount) {

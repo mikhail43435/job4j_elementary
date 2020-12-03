@@ -1,4 +1,4 @@
-package test.java.main.oop.exception;
+package ru.job4j.oop.exception;
 
 public class FindMaxLength {
     public static void main(String[] args) {

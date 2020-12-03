@@ -1,4 +1,4 @@
-package test.java.main.аrrays;
+package ru.job4j.аrrays;
 
 public class Square {
     /* заполнить массив через цикл элементами от 0 до bound , возведенными в квадрат */

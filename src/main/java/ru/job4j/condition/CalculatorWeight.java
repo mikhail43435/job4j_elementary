@@ -1,4 +1,4 @@
-package test.java.main.condition;
+package ru.job4j.condition;
 
 public class CalculatorWeight {
     public static double manWeight(short height) {

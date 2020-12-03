@@ -1,4 +1,4 @@
-package test.java.main.collection.passportOffice;
+package ru.job4j.collection.passportOffice;
 
 import java.util.HashMap;
 import java.util.Map;

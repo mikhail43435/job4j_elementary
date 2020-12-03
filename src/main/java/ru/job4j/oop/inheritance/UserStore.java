@@ -1,4 +1,4 @@
-package test.java.main.oop.inheritance;
+package ru.job4j.oop.inheritance;
 
 public class UserStore {
     public static void main(String[] args) {

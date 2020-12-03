@@ -1,4 +1,4 @@
-package test.java.main.oop.base;
+package ru.job4j.oop.base;
 
 public class Reduce {
     private int[] array;

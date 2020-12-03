@@ -1,4 +1,4 @@
-package test.java.main.oop.base;
+package ru.job4j.oop.base;
 
 import java.util.Arrays;
 

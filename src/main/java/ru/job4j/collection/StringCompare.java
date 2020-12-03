@@ -1,4 +1,4 @@
-package test.java.main.collection;
+package ru.job4j.collection;
 
 import java.util.Comparator;
 

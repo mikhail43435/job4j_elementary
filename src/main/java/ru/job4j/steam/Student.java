@@ -1,4 +1,4 @@
-package test.java.main.steam;
+package ru.job4j.steam;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package test.java.main.collection.combineComparable;
+package ru.job4j.collection.combineComparable;
 
 public class Job implements Comparable<Job> {
     private String name;

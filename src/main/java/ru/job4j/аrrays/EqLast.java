@@ -1,4 +1,4 @@
-package test.java.main.аrrays;
+package ru.job4j.аrrays;
 
 public class EqLast {
     public static boolean check(int[] left, int[] right) {

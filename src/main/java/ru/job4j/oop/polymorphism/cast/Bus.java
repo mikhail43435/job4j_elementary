@@ -1,4 +1,4 @@
-package test.java.main.oop.polymorphism.cast;
+package ru.job4j.oop.polymorphism.cast;
 
 public class Bus implements Vehicle {
     @Override

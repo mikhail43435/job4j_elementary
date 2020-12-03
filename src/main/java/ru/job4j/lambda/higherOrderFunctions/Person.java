@@ -1,4 +1,4 @@
-package test.java.main.lambda.higherOrderFunctions;
+package ru.job4j.lambda.higherOrderFunctions;
 
 public class Person {
     private String name;

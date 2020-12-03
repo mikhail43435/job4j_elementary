@@ -1,4 +1,4 @@
-package test.java.main.oop.profession;
+package ru.job4j.oop.profession;
 
 public class Programmer extends Engineer {
     private String lagnguage;

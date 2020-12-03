@@ -1,4 +1,4 @@
-package test.java.main.steam.travelagency;
+package ru.job4j.steam.travelagency;
 
 import java.util.Objects;
 

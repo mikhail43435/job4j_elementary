@@ -1,4 +1,4 @@
-package test.java.main.cycles;
+package ru.job4j.cycles;
 
 public class Fitness {
     public static int calc(int ivan, int nik) {

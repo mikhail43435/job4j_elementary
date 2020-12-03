@@ -1,4 +1,4 @@
-package test.java.main.cycles;
+package ru.job4j.cycles;
 
 public class Mortgage {
     public static int year(int amount, int salary, double percent) {

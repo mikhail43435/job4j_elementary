@@ -1,6 +1,6 @@
-package test.java.main.oop.base;
+package ru.job4j.oop.base;
 
-import test.java.main.oop.kolobok.Wolf;
+import ru.job4j.oop.kolobok.Wolf;
 
 public class Story {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package test.java.main.oop.polymorphism;
+package ru.job4j.oop.polymorphism;
 
 public class ScannerTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package test.java.main.аrrays;
+package ru.job4j.аrrays;
 
 public class Matrix {
     public static int[][] multiple(int size) {

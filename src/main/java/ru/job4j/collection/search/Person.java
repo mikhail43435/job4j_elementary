@@ -1,4 +1,4 @@
-package test.java.main.collection.search;
+package ru.job4j.collection.search;
 
 public class Person {
     private String name;

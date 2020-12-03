@@ -1,4 +1,4 @@
-package test.java.main.oop.exception;
+package ru.job4j.oop.exception;
 
 public class FindEl extends Exception {
     public static int indexOf(String[] value, String key) throws ElementNotFoundException  {

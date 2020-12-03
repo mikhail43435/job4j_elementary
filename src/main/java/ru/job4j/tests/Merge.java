@@ -1,4 +1,4 @@
-package test.java.main.tests;
+package ru.job4j.tests;
 
 import static java.lang.System.arraycopy;
 

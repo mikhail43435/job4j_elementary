@@ -1,6 +1,6 @@
-package test.java.main.аrrays;
+package ru.job4j.аrrays;
 
-import test.java.main.oop.encapsulation.Book;
+import ru.job4j.oop.encapsulation.Book;
 
 public class SwitchArray {
 

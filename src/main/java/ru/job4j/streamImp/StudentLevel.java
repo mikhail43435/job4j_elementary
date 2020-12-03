@@ -1,4 +1,4 @@
-package test.java.main.streamImp;
+package ru.job4j.streamImp;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package test.java.main.cycles;
+package ru.job4j.cycles;
 
 public class Factorial {
     public static int calc(int n) {

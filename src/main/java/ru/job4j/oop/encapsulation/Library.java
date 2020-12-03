@@ -1,6 +1,6 @@
-package test.java.main.oop.encapsulation;
+package ru.job4j.oop.encapsulation;
 
-import test.java.main.аrrays.*;
+import ru.job4j.аrrays.*;
 
 public class Library {
     public static void main(String[] args) {

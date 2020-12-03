@@ -1,4 +1,4 @@
-package test.java.main.streamImp.crosszero;
+package ru.job4j.streamImp.crosszero;
 
 import java.util.List;
 

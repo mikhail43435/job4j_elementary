@@ -1,4 +1,4 @@
-package test.java.main.oop.encapsulation;
+package ru.job4j.oop.encapsulation;
 
 public class Config {
     private String name;

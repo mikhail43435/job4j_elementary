@@ -1,4 +1,4 @@
-package test.java.main.collection.task;
+package ru.job4j.collection.task;
 
 public class Task {
     private String number;

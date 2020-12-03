@@ -1,4 +1,4 @@
-package test.java.main.oop.exception;
+package ru.job4j.oop.exception;
 
 public class FactRec {
     public static int calc(int n) {

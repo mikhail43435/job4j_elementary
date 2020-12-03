@@ -1,4 +1,4 @@
-package test.java.main.collection.task;
+package ru.job4j.collection.task;
 
 import java.util.HashSet;
 import java.util.List;

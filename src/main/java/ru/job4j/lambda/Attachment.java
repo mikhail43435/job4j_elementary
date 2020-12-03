@@ -1,4 +1,4 @@
-package test.java.main.lambda;
+package ru.job4j.lambda;
 
 public class Attachment {
     private String name;

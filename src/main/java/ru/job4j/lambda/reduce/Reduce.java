@@ -1,4 +1,4 @@
-package test.java.main.lambda.reduce;
+package ru.job4j.lambda.reduce;
 
 import java.util.function.BiFunction;
 import java.util.function.Supplier;

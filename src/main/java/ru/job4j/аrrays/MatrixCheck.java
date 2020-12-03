@@ -1,4 +1,4 @@
-package test.java.main.аrrays;
+package ru.job4j.аrrays;
 
 //import java.util.concurrent.LinkedBlockingDeque;
 

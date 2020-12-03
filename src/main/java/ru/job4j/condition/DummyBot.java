@@ -1,4 +1,4 @@
-package test.java.main.condition;
+package ru.job4j.condition;
 
 public class DummyBot {
     public static String answer(String question) {

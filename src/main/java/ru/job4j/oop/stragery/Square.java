@@ -1,4 +1,4 @@
-package test.java.main.oop.stragery;
+package ru.job4j.oop.stragery;
 
 public class Square implements Shape {
     @Override

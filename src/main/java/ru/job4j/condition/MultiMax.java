@@ -1,4 +1,4 @@
-package test.java.main.condition;
+package ru.job4j.condition;
 
 public class MultiMax {
     public static int max(int first, int second, int third) {
