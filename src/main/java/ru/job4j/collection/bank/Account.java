@@ -2,19 +2,38 @@ package ru.job4j.collection.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс представляет модель данных
+ * банковского счета
+ * @author MK
+ * @version 1.0
+ */
+
 public class Account {
     private String requisite;
     private double balance;
 
+    /**
+     * Конструктор класса
+     * @param requisite строковое представление реквизитов
+     * @param balance сумма баланса счета
+     */
     public Account(String requisite, double balance) {
         this.requisite = requisite;
         this.balance = balance;
     }
 
+    /**
+     * Метод возвращает реквизиты счета в виде строки
+     * @return стоковое представление реквизитов счета
+     */
     public String getRequisite() {
         return requisite;
     }
 
+    /**
+     * @deprecated
+     */
     public void setRequisite(String requisite) {
         this.requisite = requisite;
     }
