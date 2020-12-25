@@ -1,0 +1,17 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< ru.job4j:job4j_elementary >----------------------
+[INFO] Building job4j_elementary 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ job4j_elementary ---
+[INFO] Deleting C:\projects\job4j_elementary\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ job4j_elementary ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ job4j_elementary ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 193 source files to C:\projects\job4j_elementary\target\classes
+Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? 
