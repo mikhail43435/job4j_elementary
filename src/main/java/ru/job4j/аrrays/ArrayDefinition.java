@@ -6,6 +6,10 @@ public class ArrayDefinition {
         String[] surnames = new String[100500];
         float[] prices = new float[40];
         String[] names = new String[4];
+        System.out.println("Array 1 length = " + ages.length);
+        System.out.println("Array 2 length = " + surnames.length);
+        System.out.println("Array 3 length = " + prices.length);
+        System.out.println("Array 4 length = " + names.length);
         names[0] =  "Nic";
         names[1] = "Mike";
         names[2] = "Soul";
