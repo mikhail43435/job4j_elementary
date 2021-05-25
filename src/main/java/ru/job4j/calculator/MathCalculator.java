@@ -9,13 +9,6 @@ public class MathCalculator {
                 + ru.job4j.math.MathFunction.multiply(first, second);
     }
 
-    public static void main(String[] args) {
-        System.out.println("Результат расчета 1 равен: " + sumAndMultiply(10, 20));
-        System.out.println("Результат расчета 2 равен: " + sumOfOperationsSubAndDiv(10, 20));
-        System.out.println("Результат расчета 3 равен: " + sumOfOperationsSumMultDivSub(10, 20));
-
-    }
-
     public static double sumOfOperationsSubAndDiv(double first, double second) {
         return subtraction(first, second) + division(first, second);
     }
@@ -27,4 +20,10 @@ public class MathCalculator {
                 + subtraction(first, second);
     }
 
+    public static void main(String[] args) {
+        System.out.println("Результат расчета 1 равен: " + sumAndMultiply(10, 20));
+        System.out.println("Результат расчета 2 равен: " + sumOfOperationsSubAndDiv(10, 20));
+        System.out.println("Результат расчета 3 равен: " + sumOfOperationsSumMultDivSub(10, 20));
+
+    }
 }
